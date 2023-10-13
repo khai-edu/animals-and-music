@@ -3,7 +3,7 @@ package org.example;
 public class FeedUnit
 {
     public static String[] feedTypes = new String[]{"meat", "fishFeed"};
-    double weightKilogram;
+    Double weightKilogram;
     String type;
 
     static class SaltLevel{}

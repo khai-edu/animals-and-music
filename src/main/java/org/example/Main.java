@@ -5,8 +5,10 @@ public class Main
     public static void main(String[] args)
     {
         FeedUnit feedUnit = new FeedUnit(1, "meat");
-        Animal animal = new Cat("Murchik");
-        interactWithAnimal(animal, feedUnit);
+        Animal animal1 = new Cat("Murchik");
+        Animal animal2 = new Cat("Vasya");
+        interactWithAnimal(animal1, feedUnit);
+        System.out.println(animal1.equals(animal2));
     }
 
     private static void interactWithAnimal(Animal animal, FeedUnit feedUnit){
