@@ -36,8 +36,8 @@ public class Cat extends Animal
     }
 
     @Override
-    public void feed(FeedUnit feedUnit)
+    public void feed(FeedUnit feedUnit) throws FeedException
     {
-
+	super.feed(feedUnit);
     }
 }

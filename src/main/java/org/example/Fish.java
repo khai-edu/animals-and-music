@@ -12,12 +12,8 @@ public class Fish extends Animal
     }
 
     @Override
-    public void feed(FeedUnit feedUnit){
-
-    }
-
-    public void feed()
+    public void feed(FeedUnit feedUnit) throws FeedException
     {
-
+        super.feed(feedUnit);
     }
 }

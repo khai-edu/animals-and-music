@@ -11,8 +11,19 @@ public class Main
         System.out.println(animal1.equals(animal2));
     }
 
-    private static void interactWithAnimal(Animal animal, FeedUnit feedUnit){
-        animal.feed(feedUnit);
+    private static void interactWithAnimal(Animal animal, FeedUnit feedUnit)
+    {
+        try
+        {
+            animal.feed(feedUnit);
+            animal.feed(feedUnit);
+            animal.feed(feedUnit);
+            animal.feed(feedUnit);
+        }
+        catch (FeedException e)
+        {
+            System.err.println(e.getMessage());
+        }
         animal.makeSound();
     }
 }
